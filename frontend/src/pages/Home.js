@@ -12,7 +12,8 @@ const Home = () => {
 
   useEffect(() => {
     const fetchUrls = async () => {
-      const response = await fetch('https://url-shortner-backend-himanshu-aroras-projects.vercel.app/api/urls', {
+
+      const response = await fetch('https://tiny-url-git-main-4nurags-projects.vercel.app/api/urls/api/urls', {
         headers: {
           'Authorization': `Bearer ${user.token}`
         }
