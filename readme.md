@@ -13,7 +13,7 @@ Senstive information such as password are stored in encrypted format in database
 
 ## Deployment
 
-The application is deployed via Vercel: [https://url-shortner-himanshu-aroras-projects.vercel.app/](https://url-shortner-himanshu-aroras-projects.vercel.app/)
+The application is deployed via Vercel: [https://tiny-url-git-main-4nurags-projects.vercel.app/](https://tiny-url-git-main-4nurags-projects.vercel.app/)
 
 ## Cloning
 

@@ -15,7 +15,7 @@ const getUrls = async (req, res) => {
 const getLongUrl = async (req, res) => {
   const { id: short_url_id } = req.params;
 
-  const short_url_temp = "https://url-shortner-himanshu-aroras-projects.vercel.app/" + short_url_id;
+  const short_url_temp = "https://tiny-url-git-main-4nurags-projects.vercel.app/" + short_url_id;
 
   const url = await UrlModel.find({ short_url: short_url_temp });
 
@@ -46,7 +46,7 @@ const createShortUrl = async (req, res) => {
       .json({ error: "Please fill in the fields ", emptyFields });
   }
 
-  if(long_url.includes('url-shortner-himanshu-aroras-projects.vercel.app')){
+  if(long_url.includes('tiny-url-git-main-4nurags-projects.vercel.app')){
     emptyFields.push("long_url");
     return res
       .status(400)
@@ -73,7 +73,7 @@ const createShortUrl = async (req, res) => {
       });
     }
 
-    alias = "https://url-shortner-himanshu-aroras-projects.vercel.app/" + preferred_alias;
+    alias = "https://tiny-url-git-main-4nurags-projects.vercel.app/" + preferred_alias;
     const existingUrl = await UrlModel.find({ short_url: alias });
 
     if (existingUrl.length > 0) {
@@ -89,7 +89,7 @@ const createShortUrl = async (req, res) => {
     var existingUrl2;
     do {
       var generatedKey = generateShortID(6);
-      short_url = "https://url-shortner-himanshu-aroras-projects.vercel.app/" + generatedKey;
+      short_url = "https://tiny-url-git-main-4nurags-projects.vercel.app/" + generatedKey;
       existingUrl2 = await UrlModel.find({ short_url: short_url });
     } while (existingUrl2.length > 0);
     // TODO: add the url after deploying on vercel

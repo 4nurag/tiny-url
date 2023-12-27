@@ -11,7 +11,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://url-shortner-himanshu-aroras-projects.vercel.app"],
+    origin: ["https://tiny-url-git-main-4nurags-projects.vercel.app"],
     methods: ["POST", "GET", "PATCH", "DELETE"],
     credentials: true,
   })
