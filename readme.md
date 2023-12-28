@@ -15,7 +15,7 @@ Senstive information such as password are stored in encrypted format in database
 
 The application is deployed via Vercel: [https://tiny-url-git-main-4nurags-projects.vercel.app/](https://tiny-url-git-main-4nurags-projects.vercel.app/)
 
-## Cloning
+## Cloning  
 
 ### Backend
 
